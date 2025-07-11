@@ -1,3 +1,11 @@
+
+
+# 🎮 Tic Tac Toe Game
+
+A simple **Tic Tac Toe** game built with **HTML**, **CSS**, and **JavaScript**. Two players take turns marking the spaces in a 3×3 grid with X or O. The first to align three symbols in a row, column, or diagonal wins the game.
+
+---
+
 ## Game Logic Breakdown
 ```sh
 Board Setup
@@ -40,13 +48,6 @@ Clear all cells and reset turn tracker to restart the game.
 }
 
 ```
-
-# 🎮 Tic Tac Toe Game
-
-A simple **Tic Tac Toe** game built with **HTML**, **CSS**, and **JavaScript**. Two players take turns marking the spaces in a 3×3 grid with X or O. The first to align three symbols in a row, column, or diagonal wins the game.
-
----
-
 ## 🚀 Features
 
 - 🧠 Two-player game logic
