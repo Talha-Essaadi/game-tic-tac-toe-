@@ -40,3 +40,99 @@ Clear all cells and reset turn tracker to restart the game.
 }
 
 ```
+
+# 🎮 Tic Tac Toe Game
+
+A simple **Tic Tac Toe** game built with **HTML**, **CSS**, and **JavaScript**. Two players take turns marking the spaces in a 3×3 grid with X or O. The first to align three symbols in a row, column, or diagonal wins the game.
+
+---
+
+## 🚀 Features
+
+- 🧠 Two-player game logic
+- 📱 Responsive layout
+- 🎨 Clean and minimal UI
+- 🔁 Restart button
+- ✅ Win and draw detection
+
+---
+
+## 📁 Project Structure
+
+```sh
+
+tic-tac-toe/
+│
+├── index.html              # Main landing page
+├── /assets/                # Static assets (images, icons, fonts)
+│   ├── /images/
+│   └── /icons/
+│   ├── /fonts/
+├── /styles/                # CSS files
+│   ├── /pages/
+|   |   ├── home-page.css
+|   │   ├── login.css
+│   ├── main.css
+│   ├── variables.css
+│   └── responsive.css
+├── /scripts/               # JavaScript files
+│   └── main.js
+├── /components/            # Optional HTML snippets (e.g., navbar, footer)
+│   ├── navbar.html
+│   └── footer.html
+└── README.md               # This file
+
+
+```
+
+---
+
+## 🛠️ Technologies Used
+
+- **HTML** – Structure
+- **CSS** – Styling and layout
+- **JavaScript** – Game logic (turns, win/draw, restart)
+
+---
+
+## 🎯 How to Use
+
+1. **Clone or Download** the repository.
+2. Open `index.html` in any modern browser.
+3. Play the game — X and O take turns.
+4. Click "Restart" to play again.
+
+---
+
+## 📷 Preview
+
+![Game Screenshot](https://via.placeholder.com/500x300?text=Tic+Tac+Toe+Preview)
+
+[Link Text](https://talha-essaadi.github.io/game-tic-tac-toe-/)
+---
+
+## 📌 To Do / Possible Improvements
+
+- 🎮 Add single-player mode (AI)
+- 🔊 Add sound effects
+- 💾 Save scores in local storage
+
+
+---
+
+## 📄 License
+
+This project is open-source and free to use for learning purposes.
+
+---
+
+## 🙋‍♂️ Author
+
+**Talha Essaadi**  
+talhaessaadi@gmail.com
+
+
+```
+
+---
+

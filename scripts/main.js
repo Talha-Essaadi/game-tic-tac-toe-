@@ -23,7 +23,7 @@ cells.forEach(cell => {
 
 function handlClick(e) {
     const cell = e.target;
-    const index = cell.dataset.index;
+    
 
     if (cell.textContent !== "" || !gameActive) {
         return;
