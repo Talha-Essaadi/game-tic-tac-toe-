@@ -1,13 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tic-tac-toe</title>
-    <link rel="stylesheet" href="styles/main.css">
-    <link rel="stylesheet" href="styles/pages/home-page.css">
-</head>
-<body>
-    
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>tic-tac-toe</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/pages/home-page.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <div class="exit-game-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" class="exit-icon" viewBox="0 0 12 12"><path
+                            fill="currentColor"
+                            d="M3 3.75A.75.75 0 0 1 3.75 3h3a.75.75 0 0 0 0-1.5h-3A2.25 2.25 0 0 0 1.5 3.75v4.5a2.25 2.25 0 0 0 2.25 2.25h3a.75.75 0 0 0 0-1.5h-3A.75.75 0 0 1 3 8.25zm5.78-.28a.75.75 0 0 0-1.06 1.06l.72.72H5.25a.75.75 0 0 0 0 1.5h3.19l-.72.72a.75.75 0 0 0 1.06 1.06l2-2a.75.75 0 0 0 0-1.06z" />
+                    </svg>
+                    <h1 class="exit-game-button-title">Exit Game</h1>
+                </div>
+                <div class="game-center">
+                    <h1 class="game-center-title">Tic Tac Toe</h1>
+                </div>
+                <div class="sound-and-settings-icons">
+                    <div class="settings-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 512 512"><path
+                          class="settings-icon"  fill="currentColor"
+                            d="M256 176a80 80 0 1 0 80 80a80.24 80.24 0 0 0-80-80m172.72 80a165.5 165.5 0 0 1-1.64 22.34l48.69 38.12a11.59 11.59 0 0 1 2.63 14.78l-46.06 79.52a11.64 11.64 0 0 1-14.14 4.93l-57.25-23a176.6 176.6 0 0 1-38.82 22.67l-8.56 60.78a11.93 11.93 0 0 1-11.51 9.86h-92.12a12 12 0 0 1-11.51-9.53l-8.56-60.78A169.3 169.3 0 0 1 151.05 393L93.8 416a11.64 11.64 0 0 1-14.14-4.92L33.6 331.57a11.59 11.59 0 0 1 2.63-14.78l48.69-38.12A175 175 0 0 1 83.28 256a165.5 165.5 0 0 1 1.64-22.34l-48.69-38.12a11.59 11.59 0 0 1-2.63-14.78l46.06-79.52a11.64 11.64 0 0 1 14.14-4.93l57.25 23a176.6 176.6 0 0 1 38.82-22.67l8.56-60.78A11.93 11.93 0 0 1 209.94 26h92.12a12 12 0 0 1 11.51 9.53l8.56 60.78A169.3 169.3 0 0 1 361 119l57.2-23a11.64 11.64 0 0 1 14.14 4.92l46.06 79.52a11.59 11.59 0 0 1-2.63 14.78l-48.69 38.12a175 175 0 0 1 1.64 22.66" />
+                    </svg>
+                    </div>
+
+                 <div class="sound-wrapper">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="24"
+                        height="24" viewBox="0 0 24 24"><g fill="none"><path
+                              class="sound-icon"  fill="currentColor"
+                                d="M4.158 13.93a3.75 3.75 0 0 1 0-3.86a1.5 1.5 0 0 1 .993-.7l1.693-.339a.45.45 0 0 0 .258-.153L9.17 6.395c1.182-1.42 1.774-2.129 2.301-1.938S12 5.572 12 7.42v9.162c0 1.847 0 2.77-.528 2.962c-.527.19-1.119-.519-2.301-1.938L7.1 15.122a.45.45 0 0 0-.257-.153L5.15 14.63a1.5 1.5 0 0 1-.993-.7" /><path
+                                stroke="currentColor" stroke-linecap="round"
+                                stroke-width="2"
+                                d="M14.536 8.464a5 5 0 0 1 .027 7.044m4.094-9.165a8 8 0 0 1 .044 11.27" /></g>
+                    </svg>
+                 </div>
+
+                </div>
+            </header>
+            <section class="main-section">
+                <div class="main-section-header">
+                    <div class="user-design-1">
+                        <div class="user-image-and-name">
+                            <div class="user-1-image">
+                                <img src="assets/icons/user-profile-1.jpg" alt="">
+                            </div>                            
+                            <h1 class="user-name">tolu</h1>
+                        </div>
+                        <div class="o-design">
+                        <h1 class="o-design-title">O</h1>
+                        </div>
+                    </div>
+                    <div class="vs-design">
+                        <h1 class="vs-design-title">VS</h1>
+                    </div>
+                     <div class="user-design-2">
+                        <div class="user-image-and-name">
+                            <div class="user-2-image">
+                                <img src="assets/icons/user-profile-2.jpg" alt="">
+                            </div>                            
+                            <h1 class="user-name">Diddler</h1>
+                        </div>
+                        <div class="o-design">
+                        <h1 class="o-design-title">X</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrapper-status">
+                <h1 class="status"></h1>
+                </div>
+                <div class="main-section-cells">
+                    <div class="cell cell-1"></div>
+                    <div class="cell cell-2"></div>
+                    <div class="cell cell-3"></div>
+                    <div class="cell cell-4"></div>
+                    <div class="cell cell-5"></div>
+                    <div class="cell cell-6"></div>
+                    <div class="cell cell-7"></div>
+                    <div class="cell cell-8"></div>
+                    <div class="cell cell-9"></div>
+                </div>
+                <div class="main-section-buttons">
+                    <div class="restart-button">
+                        <h1 class="restart-button-title">RESTART</h1>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
 </html>

@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --Background-color: white;
+    --Primary-color: #002C4E;
+
+    --white-blue: #0068C0;
+    --dark-blue: #6824FF;
+    --white-red: #FCECEB;
+    --dark-red: #CA332B;
+    --white-grey: #E8ECEF;
+    --dark-grey: #7B8195;
+    --green: #00CD5A;
+
+}
+
+body {
+    font-family: "Permanent Marker", cursive;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Background-color);
+    box-sizing: border-box;
+    padding: 0 clamp(20px, 10vw, 1000px);
+    padding-bottom: 100px;
+
+}
+
+@media(max-width: 700px) {
+    .container {
+        padding: 20px clamp(20px, 5vw, 1000px);
+        padding-bottom: 100px;
+    }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+.exit-game-button {
+    background-color: var(--white-red);
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.exit-game-button-title {
+
+    font-size: 18px;
+    color: var(--dark-red);
+
+
+}
+
+.exit-icon {
+    color: var(--dark-red);
+
+}
+
+.sound-and-settings-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.settings-wrapper, .sound-wrapper {
+    display: flex;
+    padding: 2px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-grey);
+
+}
+
+.settings-icon, .sound-icon {
+    color: var(--dark-grey);
+
+}
+
+.game-center-title {
+    color: var(--Primary-color);
+    white-space: nowrap;
+    font-size: clamp(25px, 5vw, 40px);
+}
+
+.main-section {
+    width: 100%;
+    min-height: 70vh;
+    padding: 30px 0;
+    background-color: var(--white-blue);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+}
+
+.main-section-header {
+    width: 100%;
+    height: 50px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.user-design-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+
+}
+
+.user-design-2 {
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.user-image-and-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.o-design {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+
+
+}
+
+.user-image {
+    width: 40px;
+    height: 40px;
+
+}
+
+.user-1-image img  ,.user-2-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid ;
+    border-color: transparent;
+}
+
+.user-name {
+    color: var(--Background-color);
+    font-size: 18px;
+}
+
+.o-design-title {
+    font-family: system-ui, sans-serif;
+    color: var(--Primary-color);
+    font-weight: 800;
+    font-size: 50px;
+
+
+}
+
+.vs-design {
+    background-color: var(--Background-color);
+    height: 35px;
+    width: 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.vs-design-title {
+    color: var(--Primary-color);
+    font-size: 18px;
+}
+
+.wrapper-status {
+    width: 100%;
+    height: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.status {
+    color: var(--Background-color);
+}
+
+.main-section-cells {
+    
+    width: 100%;
+    display: grid;
+    width: 300px;
+    grid-template-columns: repeat(3, auto);
+    margin: auto;
+    margin-top: -30px;
+
+    padding-right: 28px;
+
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    font-family: system-ui, sans-serif;
+    font-weight: 800;
+    border: 5px solid var(--Background-color);
+    font-size: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--green);
+    text-shadow:
+        -2px -2px 0 var(--Background-color),
+        2px -2px 0 var(--Background-color),
+        -2px 2px 0 var(--Background-color),
+        2px 2px 0 var(--Background-color);
+}
+
+.cell-1 {
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.cell-2 {
+    border-top-color: transparent;
+
+}
+
+.cell-3 {
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.cell-4 {
+
+    border-left-color: transparent;
+}
+
+.cell-6 {
+
+    border-right-color: transparent;
+}
+
+.cell-7 {
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+}
+
+.cell-8 {
+    border-bottom-color: transparent;
+
+}
+
+.cell-9 {
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+}
+
+.main-section-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.restart-button {
+    background-color: var(--dark-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 30px;
+    border-radius: 25px;
+    border: 2px solid var(--Background-color);
+    cursor:pointer;
+}
+
+.restart-button-title {
+    color: var(--Background-color);
+}
